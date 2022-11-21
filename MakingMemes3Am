@@ -184,6 +184,10 @@ local function self_destruct()
     auto_farm_enabled = false
 end
 
+other_tab:CreateTextLabel("UI Made By 0x45")
+
+other_tab:CreateButton("Copy 0x45's GitLab", function() setclipboard("https://gitlab.com/0x45.xyz") end)
+
 other_tab:CreateButton("Remove UI", self_destruct)
 
 local vu = game:GetService("VirtualUser")
